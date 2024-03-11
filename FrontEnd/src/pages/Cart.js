@@ -52,14 +52,15 @@ const Cart = () => {
       )
     }
   }
+  
 
   return (
     <>
-      <h2>سبد خرید</h2>
+      <h2>Cart</h2>
       {
         cartItems.length === 0 ?
-          <div className="empty-price">سبد خرید خالی است.</div> :
-          <div className="show-price">شما {cartItems.length} محصول در سبد خرید دارید.</div>
+          <div className="empty-price">The shopping cart is empty.</div> :
+          <div className="show-price">You have {cartItems.length} product in the cart.  </div>
       }
       <div>
         <Row>
@@ -92,7 +93,7 @@ const Cart = () => {
             <Card>
               <ListGroup variant="flush">
                 <ListGroup.Item>
-                  مجموع: {cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)}
+                  Total: {cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)}
                 </ListGroup.Item>
               </ListGroup>
             </Card>

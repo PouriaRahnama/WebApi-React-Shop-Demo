@@ -19,7 +19,8 @@ const Home = () => {
 
   return (
     <div>
-      <h1>محصولات</h1>
+      <h1 className="text-center">Products</h1>
+      <hr/>
       <Row>
         {products.map((item) => {
           return (

@@ -28,7 +28,7 @@ const Product = () => {
   return (
     <div>
       <Link to="/" className="btn btn-light my-3">
-        بازگشت به صفحه اصلی
+      come back to main page
       </Link>
       <Row>
         <Col md={6}><Image src={product.imageURL} fliud="true" /></Col>
@@ -45,7 +45,7 @@ const Product = () => {
               <Button  onClick={addToCartHandler}
                className="btn-block"
                 type="button">
-                افزودن به سبد خرید
+                Add to cart
               </Button>
             </ListGroup.Item>
           </ListGroup>
